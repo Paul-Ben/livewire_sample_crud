@@ -13,6 +13,11 @@ class Classes extends Model
         'name',
     ];
 
+    public function sections( ) {
+        return $this->hasMany(Section::class);
+    }
+
+
     public function  students() {
         return $this->hasMany(Student::class);
     }
